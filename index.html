@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleHomePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <title>Strive's M1-M2 Holidays Homework</title>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div class="d-none d-sm-block"><!--così è invisibile su schermi piccoli-->
+         <nav class="navbar navbar-expand-lg d-flex justify-content-around mt-3  ">
+        <div class='navBarIcon d-flex align-items-center'>
+            <div class="navbar-brand mr-0" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-peace"
+            viewBox="0 0 16 16">
+                <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0v6.775l4.79 4.79A7 7 0 0 0 8.5 1.018zm4.084 12.273L8.5 9.207v5.775a6.97 6.97 0 0 0 4.084-1.691zM7.5 14.982V9.207l-4.084 4.084A6.97 6.97 0 0 0 7.5 14.982zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                </svg>
+            </div>
+            <div class="nav-item active">
+                AirBnB <span class="sr-only">(current)</span>
+            </div>
+        </div>
+        <div class='d-flex '>
+            <div class="nav-item px-3 font">
+                Places to stay
+            </div>
+            <div class="nav-item px-3 font">
+                Experience
+            </div>
+            <div class="nav-item px-3 font">
+                Online experience
+            </div>
+
+        </div>    
+        <div class='d-flex align-items-center'>
+            <div class="nav-item mx-2 font">
+                Become a Host
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe mx-2"
+                viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                </svg>
+            </div>
+            <div>
+                <button id="btnGroupDrop1 " type="button" class="btn btn-light rounded-pill ml-2" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                    
+                </button>
+            </div>
+                
+        </div>
+        
+        
+            
+            
+            
+        
+    </nav>
+    </div>
+     
+    <!-- HTML & CSS EXERCISES -->
+
+    <!-- EXERCISE 1 
+     Implement the first image (1-Airbnb-homepage.png) following closely alignments, positioning, and layout 
+     hint: to achieve the main search component effect you should use inputs with no colors (transparent), composed 
+     together and style the div that wraps them instead. use input of different types (text, number, etc..)
+     for the "inspiration" section you can create just 3 rows of suggested destinations -->
+
+
+    <!-- EXERCISE 2 
+     Make it responsive! More importantly the mobile version should not create any issues. 
+     Make sure to respect the second image layout (2-Airbnb-homepage-mobile-view.png) -->
+
+    <!-- EXERCISE 3
+     Create the Search layout as seen in the (3-Search-page.png) image.
+     Use the assets provided for the picture. 
+     n.b.: We are not asking you to create a working pagination or navigation. Just replicate the layout precisely -->
+
+    <!-- #### EXTRA -->
+    
+    <!-- EXERCISE 4
+        Create the login modal in the search page. 
+        When the user clicks on the avatar (top-right corner), the login modal should appear over the search -->
+
+    <!-- EXERCISE 5 Implement the Host page (5-EXTRA-Host-page.png) using the assets provided -->
+
+
+
+    <script>
+    // #### JS EXERCISES
+
+    // EXERCISE 1
+    // Take the value from the city input field and display it in an H1 on the center of the Hero content, on top of the image.
+    // The letter should appear one by one while the user types them in the input.
+
+    // EXERCISE 2
+    // Create an array of objects for each city you can think of. Each one should look like the following:
+    //      {
+    //         city: "Barcellona",
+    //         img: "https://itk.ppke.hu/get/images/2078419/spanyolorsz%C3%A1g.jpg"
+    //      }
+
+    // EXERCISE 3
+    // We want to display the picture of the corresponding searched city as the new background of the hero section.
+    
+    // In the same place you took the input value, use -at the same time- a for loop to perform a check
+    // on the previously created array of city+img #### BEWARE: (no advanced methods allowed: only for loops and if statements).
+    
+    // Check if the searched city is found in any object in the array.
+    // If it's found, use the img property as the new source for the background image of the hero section.
+    
+    // What you should see in the end is: the image of the city as background and the name of the city as the H1 title on top of it.
+
+    // EXERCISE 4
+    // create new arrays with similar structure [{img: "http://...", text: "lorem ipsum"}, {...}, {...}]
+    // for every section in the homepage that has text+image and make it so
+    // that every section which contains img+text gets generated in a randomized order on every page refresh.
+
+    // EXERCISE 5
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+    //
+    // Create a Date object via JavaScript and format it to have a date looking like this: "09/07/2021, 12:51:15"
+    // Apply it in a <span> above the <h1> to show to the user the date and time of the search, but instead of the comma, separate the two with an em dash: — like so: "09/07/2021 — 12:51:15"
+    // (you can create the em dash with a combination on the numpad that is: ALT + 0151)
+
+    // EXERCISE 6
+    // The search fields include: Location, Check-in date, Check-out date, Number of guests. You've displayed the first one in the H1 field on EX 1 already.
+    // Let's use the rest of the data in this way; when the user clicks the search button:
+    // - Create a list below the H1.
+    // - get the values from the date inputs and format them to display list items with the check-in & check-out dates as:
+    //      Check in: 25/07/2021
+    //      Check out: 30/07/2021
+    // - and the number of guests the user have selected in another list item.
+    //      Guests: 2
+
+    // EXERCISE 7
+    // On the "I'm flexible" button that you have in the page, attach the functionality to open a modal that displays
+    // a random city and image from the first array that you've created.
+
+    // #### EXTRA
+    // Create a working clock on the top-right corner of the website to display the current time to the user (hint: Date obj & setInterval)
+
+    // Create a countdown that displays the remaining time of an offer in the page (starting from 5 minutes),
+    // to give a sense of urgency to the user to book an appartment before the offer ends.
+    
+    // The countdown should appear in a modal after 1 minute from the page load.
+    // Display an alert when the time is up.
+
+    // Find a way to reuse the same modal with different information passed in, instead of creating multiple modals with different IDs.
+    </script>
+
+
+</body>
+
+</html>

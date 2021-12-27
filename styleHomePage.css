@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white!important;
+    font-family:  'Rubik', sans-serif;;
+}
+
+.navBarIcon{
+    display: -webkit-inline-box;
+}
+
+nav{
+    font-size:20px;
+}
+
+
+.font{
+    font-family: -webkit-pictograph;
+    font-size: 17px;
+}
