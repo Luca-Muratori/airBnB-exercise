@@ -107,3 +107,14 @@ nav{
     top:100px;
     left: 50px;
 }
+
+.discoveriesImg{
+    margin-left: 0px;
+}
+
+.featureButton{
+    top:10px;
+    background-color:white ;
+    left: 20px;
+
+}
