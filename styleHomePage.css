@@ -1,16 +1,17 @@
 body{
     background-color: rgb(255, 255, 255);
     
-    font-family:  'Rubik', sans-serif;
+   
    
 }
 .firstImage{
      background-image: url(/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg);
      height: 700px; /* You must set a specified height */
-  background-position: center; /* Center the image */
+ 
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   color: white;
+  margin-top: -17px;
 }
 .navBarIcon{
     display: -webkit-inline-box;
@@ -124,4 +125,8 @@ nav{
     width: 35%;
     top:100px;
     left: 100px;
+}
+
+.nation{
+    margin-top: -10px;
 }
